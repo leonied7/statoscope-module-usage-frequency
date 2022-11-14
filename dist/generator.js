@@ -1,12 +1,15 @@
-export const descriptor = {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.descriptor = void 0;
+exports.descriptor = {
     name: "stats-extension-module-usage-frequency",
     version: "1.0.0",
 };
-export default class Generator {
+class Generator {
     modulesMap = {};
     get() {
         return {
-            descriptor,
+            descriptor: exports.descriptor,
             payload: Object.entries(this.modulesMap).map(([moduleName, reasons]) => {
                 return { name: moduleName, reasons: Array.from(reasons.values()) };
             }),
@@ -30,4 +33,5 @@ export default class Generator {
         return this.modulesMap[moduleName]?.has(reason.identifier);
     }
 }
+exports.default = Generator;
 //# sourceMappingURL=generator.js.map

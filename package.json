@@ -1,6 +1,6 @@
 {
   "name": "statoscope-module-usage-frequency",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "./dist/statoscope-module-usage-frequency.cjs",
   "module": "./dist/statoscope-module-usage-frequency.mjs",
   "exports": {

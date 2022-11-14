@@ -1,12 +1,12 @@
 {
   "name": "statoscope-module-usage-frequency",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "./dist/statoscope-module-usage-frequency.cjs",
   "module": "./dist/statoscope-module-usage-frequency.mjs",
   "exports": {
     ".": {
-      "require": "./dist/statoscope-module-usage-frequency.cjs",
-      "import": "./dist/statoscope-module-usage-frequency.mjs"
+      "require": "./dist/index.js",
+      "import": "./dist/index.js"
     }
   },
   "scripts": {

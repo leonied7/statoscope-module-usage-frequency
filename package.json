@@ -5,8 +5,7 @@
   "module": "./dist/statoscope-module-usage-frequency.mjs",
   "exports": {
     ".": {
-      "require": "./dist/index.js",
-      "import": "./dist/index.js"
+      "require": "./dist/index.js"
     }
   },
   "scripts": {

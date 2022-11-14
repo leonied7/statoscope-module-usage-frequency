@@ -1,6 +1,6 @@
 {
   "name": "statoscope-module-usage-frequency",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "main": "./dist/statoscope-module-usage-frequency.cjs",
   "module": "./dist/statoscope-module-usage-frequency.mjs",
   "exports": {
@@ -16,7 +16,8 @@
     "test:coverage": "jest --runInBand --coverage",
     "lint:scripts": "eslint . --ext .ts",
     "format:scripts": "prettier . --write",
-    "format": "npm run format:scripts"
+    "format": "npm run format:scripts",
+    "release": "standard-version -a"
   },
   "devDependencies": {
     "@types/jest": "^29.0.0",
@@ -41,7 +42,7 @@
   },
   "standard-version": {
     "scripts": {
-      "postchangelog": "npm run lint:scripts && npm run test && npm run format && npm run build && git add dist"
+      "postchangelog": "npm run lint:scripts && npm run format && npm run build && git add dist"
     }
   },
   "files": [
